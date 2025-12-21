@@ -23,3 +23,8 @@
     color: white;
     text-align: center;
 }
+
+.figure-caption img {
+    width: 50%;
+
+}
