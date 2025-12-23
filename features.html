@@ -85,30 +85,34 @@
   <div class="product-list">
     <div class="product">
       <input title="btn" type="checkbox" name="products[]" value="item1">
-      <label>Item 1: Product Name</label>
-      <p>Description: blah blah</p>
+      <label>Item 1: Pizza Margherita</label>
+      <p>Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit deserunt qui rem quisquam magnam eligendi sed? Illum provident repellendus molestias itaque eveniet quisquam, minima numquam impedit amet laboriosam eius a.</p>
       <p>Price: R100</p>
       <label>Qty:</label>
       <input title="btn" type="number" name="qty[item1]" value="1" min="1">
+      <br><br>
     </div>
     <div class="product">
       <input title="btn" type="checkbox" name="products[]" value="item2">
-      <label>Item 2: Product Name</label>
-      <p>Description: blah blah</p>
+      <label>Item 2: Spaghetti Bolognese</label>
+      <p>Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur harum maiores hic incidunt, aut nam corporis deserunt cupiditate totam repellat quos enim consequatur voluptatem, voluptatibus eius omnis beatae. Beatae, error.</p>
       <p>Price: R200</p>
       <label>Qty:</label>
       <input title="btn" type="number" name="qty[item2]" value="1" min="1">
+      <br><br>
     </div>
     <div class="product">
       <input title="btn" type="checkbox" name="products[]" value="item3">
-      <label>Item 3: Product Name</label>
-      <p>Description: blah blah</p>
+      <label>Item 3: Tiramisu</label>
+      <p>Description: Coffee-soaked ladyfingers and creamy mascarpone.</p>
       <p>Price: R300</p>
       <label>Qty:</label>
       <input title="btn" type="number" name="qty[item3]" value="1" min="1">
+      <br><br>
     </div>
   </div>
   <button type="submit">Add Selected to Cart 🛍️</button>
+  <br><br>
   <a href="cart.html">View Cart 🛒</a>
 </form>
 
@@ -140,6 +144,7 @@ document.getElementById('product-form').addEventListener('submit', function(e) {
   .catch(error => console.error('Error:', error));
 });
 </script>
+
   </section>
   <footer class="bg-dark text-light py-4 mt-5">
   <div class="container">
