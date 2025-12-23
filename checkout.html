@@ -1,96 +1,149 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Checkout</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Checkout 💳</h1>
-  
-  <!-- Order Summary -->
-  <div id="order-summary">
-    <h2>Order Summary</h2>
-    <div id="order-items">
-      <!-- List items in cart with prices -->
-       <ul>
-        <li> Pizza Margherita🍕
-            <ul>
-                <li>Classic italian pizza with fresh mozzarella,juicy tomatoes,and fragnant basil</li>
-                <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R99.00</p>
-            </ul>
-        </li>
-        <li>
-            Spaghetti Bolognese🍕
-            
-            <ul>
-                <li>Rich beef and tomato sauce tossed with tender spaghetti</li>
-                <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R150.00</p>
-            </ul>
-        </li>
-        <li>Tiramisu
-            <ul>
-                <li>Coffee-soaked ladyfingers and creamy mascarpone</li>
-                <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R190.00</p>
-            </ul>
-        </li>
-        <li> Bruschetta 
-            <ul>
-                <li>Grilled bread topped with fresh tomatoes,basil,and mozzarella</li>
-                <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R230.00</p>
-            </ul>
-
-        </li>
-        <li>Cannoli 
-            <ul>
-                <li>Crispy pastry shells filled with sweet ricotta cheese</li>
-                <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R89.00</p>
-            </ul>
-
-
-        </li>
-        <li> Risotto alla Milanese
-            <ul>
-                <li>Saffron-infused risotto with ossobuco(braised Veal Shanks)</li>
-                <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R160.00</p>
-            </ul>
-
-        </li>
-        <li>Lasagna
-            <ul>
-                <li>~Layers of pasta,meat sauce,and ,melted mozzarella</li>
-                <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R140.00</p>
-            </ul>
-
-        </li>
-       </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/bella-vita-logo.jpeg" alt="bella vita logo" class="img-fluid" style="width:50px; height:50px;border-radius:50%;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Order</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <p>Subtotal: R1058.00</p>
-    <p>Delivery: None (if applicable)</p>
-    <p class="d-inline rounded-2"><strong>Total: R1058:00</strong></p>
-  </div>
+  </nav>
 
-  <!-- Delivery Info (if needed) -->
-  <div id="delivery-info">
-    <h2>Delivery Details</h2>
-    <label>Address:1683 Nu13 Mdantsane</label>
-    <input title="text" type="text" id="address" placeholder="Add address ">
-    <label>Contact:</label>
-    <input title="number" type="text" id="contact" placeholder="Add digits">
-  </div>
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="assets/img/italian-cuisine-.jpeg" class="d-block w-100 c-img " alt="italian food">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="assets/img/italian-food-4.jpg" class="d-block w-100 c-img" alt="italian food">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="assets/img/italian-food-6.jpg" class="d-block w-100 c-img" alt="italian food">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-  <!-- Payment Options -->
-  <div id="payment-options">
-    <h2>Payment Method</h2>
-    <label><input type="radio" name="payment" value="payfast"> PayFast 💳</label>
-    <label><input type="radio" name="payment" value="eft"> EFT 🤑</label>
-  </div>
+    <!--Order Section Page-->
+    <div id="order-summary">
+      <h2>Order Summary</h2>
+      <div id="order-items">
+        <!-- List items in cart with prices -->
+        <ul>
+          <li> Pizza Margherita🍕
+            <ul>
+              <li>Classic italian pizza with fresh mozzarella,juicy tomatoes,and fragnant basil</li>
+              <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R99.00</p>
+            </ul>
+          </li>
+          <li> Spaghetti Bolognese🍝
+            <ul>
+              <li>Rich beef and tomato sauce tossed with tender spaghetti</li>
+              <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R150.00</p>
+            </ul>
+          </li>
+          <li>Tiramisu
+            <ul>
+              <li>Coffee-soaked ladyfingers and creamy mascarpone</li>
+              <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R190.00</p>
+            </ul>
+          </li>
+          <li> Bruschetta
+            <ul>
+              <li>Grilled bread topped with fresh tomatoes,basil,and mozzarella</li>
+              <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R230.00</p>
+            </ul>
+          </li>
+          <li>Cannoli
+            <ul>
+              <li>Crispy pastry shells filled with sweet ricotta cheese</li>
+              <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R89.00</p>
+            </ul>
+          </li>
+          <li> Risotto alla Milanese
+            <ul>
+              <li>Saffron-infused risotto with ossobuco(braised Veal Shanks)</li>
+              <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R160.00</p>
+            </ul>
+          </li>
+          <li>Lasagna
+            <ul>
+              <li>Layers of pasta,meat sauce,and melted mozzarella</li>
+              <p class="bg-primary text-light text-center py-1 px-2 my-2 mx-3 d-inline rounded-2">R140.00</p>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <p>Subtotal: R1058.00</p>
+      <p>Delivery: None (if applicable)</p>
+      <p class="d-inline rounded-2"><strong>Total: R1058.00</strong></p>
+    </div>
 
-  <button id="complete-order">Complete Order 😊</button>
-  <br><br>
-  <a href="cart.html">Back to Cart 🛒</a>
+    <!-- Delivery Info (if needed) -->
+    <div id="delivery-info">
+      <h2>Delivery Details</h2>
+      <label>Address:1683 Nu13 Mdantsane</label>
+      <input type="text" id="address" placeholder="Add address ">
+      <label>Contact:</label>
+      <input type="text" id="contact" placeholder="Add digits">
+    </div>
+
+    <!-- Payment Options -->
+    <div id="payment-options">
+      <h2>Payment Method</h2>
+      <label><input type="radio" name="payment" value="payfast"> PayFast 💳</label>
+      <label><input type="radio" name="payment" value="eft"> EFT 🤑</label>
+    </div>
+
+    <button class="complete-order btn bg-primary px-1 py-1 my-2 mx-3 text-center text-light ms-5 me-5">Complete Order 😊</button>
+    <br><br>
+    <a href="cart.html" class="bg-success text-center text-light py-1 px-2 rounded-2 text-decoration-none ms-5 me-5">Back to Cart 🛒</a>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
